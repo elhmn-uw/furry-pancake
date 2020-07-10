@@ -1,0 +1,6 @@
+book_filename: "2020-CFRM420-Notes"
+language:
+  ui:
+    chapter_name: "Lecture "
+delete_merged_file: true
+output_dir: "docs"

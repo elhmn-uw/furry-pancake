@@ -1,0 +1,704 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>CFRM 420 Lecture Notes</title>
+  <meta name="description" content="This is a course lecture note accompanying CFRM 420 for Year 2020." />
+  <meta name="generator" content="bookdown 0.20 and GitBook 2.6.7" />
+
+  <meta property="og:title" content="CFRM 420 Lecture Notes" />
+  <meta property="og:type" content="book" />
+  
+  
+  <meta property="og:description" content="This is a course lecture note accompanying CFRM 420 for Year 2020." />
+  <meta name="github-repo" content="rstudio/bookdown-demo" />
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="CFRM 420 Lecture Notes" />
+  
+  <meta name="twitter:description" content="This is a course lecture note accompanying CFRM 420 for Year 2020." />
+  
+
+<meta name="author" content="Nam Lee" />
+
+
+<meta name="date" content="2020-07-10" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  
+  
+
+
+<script src="libs/jquery-2.2.3/jquery.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-clipboard.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+
+<script src="libs/accessible-code-block-0.0.1/empty-anchor.js"></script>
+
+
+<style type="text/css">
+code.sourceCode > span { display: inline-block; line-height: 1.25; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode { white-space: pre; position: relative; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+code.sourceCode { white-space: pre-wrap; }
+code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+    color: #aaaaaa;
+  }
+pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code span.at { color: #7d9029; } /* Attribute */
+code span.bn { color: #40a070; } /* BaseN */
+code span.bu { } /* BuiltIn */
+code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code span.ch { color: #4070a0; } /* Char */
+code span.cn { color: #880000; } /* Constant */
+code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code span.dt { color: #902000; } /* DataType */
+code span.dv { color: #40a070; } /* DecVal */
+code span.er { color: #ff0000; font-weight: bold; } /* Error */
+code span.ex { } /* Extension */
+code span.fl { color: #40a070; } /* Float */
+code span.fu { color: #06287e; } /* Function */
+code span.im { } /* Import */
+code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code span.op { color: #666666; } /* Operator */
+code span.ot { color: #007020; } /* Other */
+code span.pp { color: #bc7a00; } /* Preprocessor */
+code span.sc { color: #4070a0; } /* SpecialChar */
+code span.ss { color: #bb6688; } /* SpecialString */
+code span.st { color: #4070a0; } /* String */
+code span.va { color: #19177c; } /* Variable */
+code span.vs { color: #4070a0; } /* VerbatimString */
+code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+</style>
+
+<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li><a href="./"> 2020 UW CFRM 420 Lecture Note</a></li>
+
+<li class="divider"></li>
+<li class="chapter" data-level="1" data-path="LectureTopic01.html"><a href="#intro-class"><i class="fa fa-check"></i><b>1</b> Intro Class</a><ul>
+<li class="chapter" data-level="1.1" data-path="LectureTopic01.html"><a href="#getting-acquainted-with-r-and-rstudio"><i class="fa fa-check"></i><b>1.1</b> Getting Acquainted with R and RStudio</a><ul>
+<li class="chapter" data-level="1.1.1" data-path="LectureTopic01.html"><a href="#install-quantmod"><i class="fa fa-check"></i><b>1.1.1</b> Install “Quantmod”</a></li>
+<li class="chapter" data-level="1.1.2" data-path="LectureTopic01.html"><a href="#obtaining-financial-data"><i class="fa fa-check"></i><b>1.1.2</b> Obtaining financial data</a></li>
+<li class="chapter" data-level="1.1.3" data-path="LectureTopic01.html"><a href="#subset-by-position"><i class="fa fa-check"></i><b>1.1.3</b> Subset by Position</a></li>
+<li class="chapter" data-level="1.1.4" data-path="LectureTopic01.html"><a href="#subset-by-date-range"><i class="fa fa-check"></i><b>1.1.4</b> Subset by Date Range</a></li>
+<li class="chapter" data-level="1.1.5" data-path="LectureTopic01.html"><a href="#visualize-data-as-timeseries"><i class="fa fa-check"></i><b>1.1.5</b> Visualize Data as Timeseries</a></li>
+<li class="chapter" data-level="1.1.6" data-path="LectureTopic01.html"><a href="#understanding-chartseries"><i class="fa fa-check"></i><b>1.1.6</b> Understanding chartSeries</a></li>
+<li class="chapter" data-level="1.1.7" data-path="LectureTopic01.html"><a href="#obtain-unemployment-data"><i class="fa fa-check"></i><b>1.1.7</b> Obtain Unemployment Data</a></li>
+<li class="chapter" data-level="1.1.8" data-path="LectureTopic01.html"><a href="#visualize-unemployment-data"><i class="fa fa-check"></i><b>1.1.8</b> Visualize Unemployment Data</a></li>
+</ul></li>
+<li class="chapter" data-level="1.2" data-path="LectureTopic01.html"><a href="#asset-return"><i class="fa fa-check"></i><b>1.2</b> Asset Return</a><ul>
+<li class="chapter" data-level="1.2.1" data-path="LectureTopic01.html"><a href="#single-period-return"><i class="fa fa-check"></i><b>1.2.1</b> Single Period Return</a></li>
+<li class="chapter" data-level="1.2.2" data-path="LectureTopic01.html"><a href="#multi-period-returns"><i class="fa fa-check"></i><b>1.2.2</b> Multi Period Returns</a></li>
+<li class="chapter" data-level="1.2.3" data-path="LectureTopic01.html"><a href="#simple-example"><i class="fa fa-check"></i><b>1.2.3</b> Simple Example</a></li>
+<li class="chapter" data-level="1.2.4" data-path="LectureTopic01.html"><a href="#approximation-example"><i class="fa fa-check"></i><b>1.2.4</b> Approximation Example</a></li>
+</ul></li>
+<li class="chapter" data-level="1.3" data-path="LectureTopic01.html"><a href="#adjusted-price"><i class="fa fa-check"></i><b>1.3</b> Adjusted Price</a><ul>
+<li class="chapter" data-level="1.3.1" data-path="LectureTopic01.html"><a href="#net-return-with-dividend"><i class="fa fa-check"></i><b>1.3.1</b> Net Return with Dividend</a></li>
+<li class="chapter" data-level="1.3.2" data-path="LectureTopic01.html"><a href="#the-idea-behind-adjusted-prices"><i class="fa fa-check"></i><b>1.3.2</b> The idea behind “adjusted prices”</a></li>
+<li class="chapter" data-level="1.3.3" data-path="LectureTopic01.html"><a href="#using-adjusted-aapl-prices"><i class="fa fa-check"></i><b>1.3.3</b> Using Adjusted AAPL Prices</a></li>
+<li class="chapter" data-level="1.3.4" data-path="LectureTopic01.html"><a href="#adjusted-prices"><i class="fa fa-check"></i><b>1.3.4</b> Adjusted Prices</a></li>
+<li class="chapter" data-level="1.3.5" data-path="LectureTopic01.html"><a href="#log-and-net-return-of-aapl"><i class="fa fa-check"></i><b>1.3.5</b> Log and Net Return of AAPL</a></li>
+</ul></li>
+</ul></li>
+<li class="divider"></li>
+<li><a href="https://github.com/rstudio/bookdown" target="blank">Published with bookdown</a></li>
+
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">CFRM 420 Lecture Notes</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="header">
+<h1 class="title">CFRM 420 Lecture Notes</h1>
+<p class="author"><em>Nam Lee</em></p>
+<p class="date"><em>2020-07-10</em></p>
+</div>
+<div id="intro-class" class="section level1">
+<h1><span class="header-section-number">Lecture 1</span> Intro Class</h1>
+<ul>
+<li>Chapters 1, 2, and 4:
+<ul>
+<li>Obtaining financial data;</li>
+<li>principles of financial data science;</li>
+<li>exploratory (or empirical) data analysis,</li>
+<li>calculating asset returns</li>
+</ul></li>
+</ul>
+<div id="getting-acquainted-with-r-and-rstudio" class="section level2">
+<h2><span class="header-section-number">1.1</span> Getting Acquainted with R and RStudio</h2>
+<p>R is a programming language for statistical computing and graphics. It is widely
+used among statisticians and contains a large number of ready-to-use functions
+(called packages).</p>
+Start by installing R. Please visit:
+<center>
+<a href="https://www.r-project.org/" class="uri">https://www.r-project.org/</a>.
+</center>
+For Jupyter Notebook style, visit:
+<center>
+colab.fan/r
+</center>
+This will install the R software. It is also recommended to install an IDE
+(integrated development environment) for R, such as RStudio. Please visit:
+<center>
+<a href="https://www.rstudio.com/products/rstudio/download/" class="uri">https://www.rstudio.com/products/rstudio/download/</a>.
+</center>
+<div id="install-quantmod" class="section level3">
+<h3><span class="header-section-number">1.1.1</span> Install “Quantmod”</h3>
+<p>There are many online resources to learn R. I will briefly explain the codes
+presented in each class. However, you should thoroughly examine each code on
+your own, and use the R documentation to learn how the are used.</p>
+<p>Let us open RStudio, and install our first package. As mentioned before,
+packages include ready-to-use functions. quantmod is a package that can be used
+for obtaining financial data.</p>
+<p>To install the package use Tools -&gt; Install Packages… menu in RStudio, or
+directly use the following command:</p>
+<div class="sourceCode" id="cb1"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1"></a><span class="kw">install.packages</span>(<span class="st">&quot;quantmod&quot;</span>)</span></code></pre></div>
+</div>
+<div id="obtaining-financial-data" class="section level3">
+<h3><span class="header-section-number">1.1.2</span> Obtaining financial data</h3>
+<p>However, to be able to use an installed package, we need to load it. This is
+done by the following command.</p>
+<div class="sourceCode" id="cb2"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1"></a><span class="kw">library</span>(<span class="st">&#39;quantmod&#39;</span>)</span></code></pre></div>
+<pre><code>## Loading required package: xts</code></pre>
+<pre><code>## Loading required package: zoo</code></pre>
+<pre><code>## 
+## Attaching package: &#39;zoo&#39;</code></pre>
+<pre><code>## The following objects are masked from &#39;package:base&#39;:
+## 
+##     as.Date, as.Date.numeric</code></pre>
+<pre><code>## Registered S3 method overwritten by &#39;xts&#39;:
+##   method     from
+##   as.zoo.xts zoo</code></pre>
+<pre><code>## Loading required package: TTR</code></pre>
+<pre><code>## Registered S3 method overwritten by &#39;quantmod&#39;:
+##   method            from
+##   as.zoo.data.frame zoo</code></pre>
+<pre><code>## Version 0.4-0 included new data defaults. See ?getSymbols.</code></pre>
+<p>As you can see, R automatically load other packages that quantmod relies on, namely, packages xtx and zoo (both are packages that define time-series data types).</p>
+<p>quantmod provides the function getSymbols() which can be used to find historical financial and economical data from various online resources.</p>
+Let us load historical data from Apple Inc. from Yahoo! finance.
+First, we need to find the symbol for apple.
+Searching the web, we find the symbol at
+<center>
+<a href="https://finance.yahoo.com/quote/AAPL/" class="uri">https://finance.yahoo.com/quote/AAPL/</a>
+</center>
+<p>Thus, the symbol is AAPL. Now, we can use the following R command to obtain the
+data.</p>
+<div class="sourceCode" id="cb11"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb11-1"><a href="#cb11-1"></a><span class="kw">getSymbols</span>(<span class="st">&quot;AAPL&quot;</span>, <span class="dt">from=</span><span class="st">&quot;2007-01-01&quot;</span>, <span class="dt">to=</span><span class="st">&quot;2018-05-30&quot;</span>, <span class="dt">src=</span><span class="st">&quot;yahoo&quot;</span>)</span></code></pre></div>
+<pre><code>## &#39;getSymbols&#39; currently uses auto.assign=TRUE by default, but will
+## use auto.assign=FALSE in 0.5-0. You will still be able to use
+## &#39;loadSymbols&#39; to automatically load data. getOption(&quot;getSymbols.env&quot;)
+## and getOption(&quot;getSymbols.auto.assign&quot;) will still be checked for
+## alternate defaults.
+## 
+## This message is shown once per session and may be disabled by setting 
+## options(&quot;getSymbols.warning4.0&quot;=FALSE). See ?getSymbols for details.</code></pre>
+<pre><code>## [1] &quot;AAPL&quot;</code></pre>
+<p>We have obtained the historical data of symbol AAPL, from January 2007 until May
+2018, using the data source yahoo (Yahoo! finance), and store it as a variable
+called AAPL.</p>
+<div class="sourceCode" id="cb14"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb14-1"><a href="#cb14-1"></a><span class="kw">class</span>(AAPL)</span></code></pre></div>
+<pre><code>## [1] &quot;xts&quot; &quot;zoo&quot;</code></pre>
+<p>The variable is an extended time series (xts) object, which is a subclass of type zoo. These are essentially 2 dimensional arrays, where the index rows are date/time objects.</p>
+<p>To get the total number of rows and columns, we can use:</p>
+<div class="sourceCode" id="cb16"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb16-1"><a href="#cb16-1"></a><span class="kw">dim</span>(AAPL)</span></code></pre></div>
+<pre><code>## [1] 2871    6</code></pre>
+<p>So, AAPL has 2871 rows (trading days) and 6 columns.</p>
+<div class="sourceCode" id="cb18"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb18-1"><a href="#cb18-1"></a><span class="kw">names</span>(AAPL)</span></code></pre></div>
+<pre><code>## [1] &quot;AAPL.Open&quot;     &quot;AAPL.High&quot;     &quot;AAPL.Low&quot;      &quot;AAPL.Close&quot;   
+## [5] &quot;AAPL.Volume&quot;   &quot;AAPL.Adjusted&quot;</code></pre>
+<ul>
+<li>open price (the first trade of the day),</li>
+<li>high price (the highest price of the day),</li>
+<li>low price (the lowest price of the day),</li>
+<li>close price (the last trade of the day),</li>
+<li>volume (the total number of shares traded during the day),</li>
+<li>the adjusted prices (the price that is adjusted to include the effect of
+corporate events such as dividend payments and stock splits, more on this
+later)</li>
+</ul>
+</div>
+<div id="subset-by-position" class="section level3">
+<h3><span class="header-section-number">1.1.3</span> Subset by Position</h3>
+<p>To get the first few rows of the xts object, we can use the function head(), and
+to get the last few rows, we can use the function tails().</p>
+<div class="sourceCode" id="cb20"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb20-1"><a href="#cb20-1"></a><span class="kw">head</span>(AAPL,<span class="dt">n=</span><span class="dv">5</span>)</span></code></pre></div>
+<pre><code>##            AAPL.Open AAPL.High AAPL.Low AAPL.Close AAPL.Volume AAPL.Adjusted
+## 2007-01-03  12.32714  12.36857 11.70000   11.97143   309579900      10.36364
+## 2007-01-04  12.00714  12.27857 11.97429   12.23714   211815100      10.59366
+## 2007-01-05  12.25286  12.31428 12.05714   12.15000   208685400      10.51822
+## 2007-01-08  12.28000  12.36143 12.18286   12.21000   199276700      10.57016
+## 2007-01-09  12.35000  13.28286 12.16429   13.22429   837324600      11.44823</code></pre>
+<div class="sourceCode" id="cb22"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb22-1"><a href="#cb22-1"></a><span class="kw">tail</span>(AAPL,<span class="dt">n=</span><span class="dv">5</span>)</span></code></pre></div>
+<pre><code>##            AAPL.Open AAPL.High AAPL.Low AAPL.Close AAPL.Volume AAPL.Adjusted
+## 2018-05-22    188.38    188.88   186.78     187.16    15240700      182.1795
+## 2018-05-23    186.35    188.50   185.76     188.36    20058400      183.3476
+## 2018-05-24    188.77    188.84   186.21     188.15    23234000      183.1432
+## 2018-05-25    188.23    189.65   187.65     188.58    17461000      183.5618
+## 2018-05-29    187.60    188.75   186.87     187.90    22514100      182.8999</code></pre>
+</div>
+<div id="subset-by-date-range" class="section level3">
+<h3><span class="header-section-number">1.1.4</span> Subset by Date Range</h3>
+<div class="sourceCode" id="cb24"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb24-1"><a href="#cb24-1"></a>AAPL[<span class="st">&quot;2015-12-23/2015-12-24&quot;</span>]</span></code></pre></div>
+<pre><code>##            AAPL.Open AAPL.High AAPL.Low AAPL.Close AAPL.Volume AAPL.Adjusted
+## 2015-12-23    107.27    108.85   107.20     108.61    32657400      100.9794
+## 2015-12-24    109.00    109.00   107.95     108.03    13570400      100.4401</code></pre>
+<div class="sourceCode" id="cb26"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb26-1"><a href="#cb26-1"></a>AAPL[<span class="st">&#39;2015-12&#39;</span>] </span></code></pre></div>
+<pre><code>##            AAPL.Open AAPL.High AAPL.Low AAPL.Close AAPL.Volume AAPL.Adjusted
+## 2015-12-01    118.75    118.81   116.86     117.34    34852400     109.09604
+## 2015-12-02    117.34    118.11   116.08     116.28    33386600     108.11053
+## 2015-12-03    116.55    116.79   114.22     115.20    41569500     107.10641
+## 2015-12-04    115.29    119.25   115.11     119.03    57777000     110.66733
+## 2015-12-07    118.98    119.86   117.81     118.28    32084200     109.97002
+## 2015-12-08    117.52    118.60   116.86     118.23    34309500     109.92352
+## 2015-12-09    117.64    117.69   115.08     115.62    46361400     107.49690
+## 2015-12-10    116.04    116.94   115.51     116.17    29212700     108.00826
+## 2015-12-11    115.19    115.39   112.85     113.18    46886200     105.22832
+## 2015-12-14    112.18    112.68   109.79     112.48    64318700     104.57750
+## 2015-12-15    111.94    112.80   110.35     110.49    53323100     102.72733
+## 2015-12-16    111.07    111.99   108.80     111.34    56238500     103.51762
+## 2015-12-17    112.02    112.25   108.98     108.98    44772800     101.32341
+## 2015-12-18    108.91    109.52   105.81     106.03    96453300      98.58065
+## 2015-12-21    107.28    107.37   105.57     107.33    47590600      99.78932
+## 2015-12-22    107.40    107.72   106.45     107.23    32789400      99.69637
+## 2015-12-23    107.27    108.85   107.20     108.61    32657400     100.97939
+## 2015-12-24    109.00    109.00   107.95     108.03    13570400     100.44014
+## 2015-12-28    107.59    107.69   106.18     106.82    26704200      99.31517
+## 2015-12-29    106.96    109.43   106.86     108.74    30931200     101.10027
+## 2015-12-30    108.58    108.70   107.18     107.32    25213800      99.78002
+## 2015-12-31    107.01    107.03   104.82     105.26    40912300      97.86475</code></pre>
+</div>
+<div id="visualize-data-as-timeseries" class="section level3">
+<h3><span class="header-section-number">1.1.5</span> Visualize Data as Timeseries</h3>
+<div class="sourceCode" id="cb28"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb28-1"><a href="#cb28-1"></a><span class="kw">chartSeries</span>(AAPL, <span class="dt">theme=</span><span class="st">&quot;white&quot;</span>, <span class="dt">echo=</span><span class="ot">TRUE</span>)</span></code></pre></div>
+<p><img src="2020-CFRM420-Notes_files/figure-html/unnamed-chunk-11-1.png" width="672" style="display: block; margin: auto;" /></p>
+<hr />
+<div class="sourceCode" id="cb29"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb29-1"><a href="#cb29-1"></a><span class="kw">chartSeries</span>(AAPL, <span class="dt">theme=</span><span class="st">&quot;white&quot;</span>, <span class="dt">subset=</span><span class="st">&quot;2015-12-15::2015-12-31&quot;</span>)</span></code></pre></div>
+<p><img src="2020-CFRM420-Notes_files/figure-html/unnamed-chunk-12-1.png" width="672" style="display: block; margin: auto;" /></p>
+</div>
+<div id="understanding-chartseries" class="section level3">
+<h3><span class="header-section-number">1.1.6</span> Understanding chartSeries</h3>
+<ul>
+<li>What does <code>chartSeries</code> do?</li>
+</ul>
+<div class="sourceCode" id="cb30"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb30-1"><a href="#cb30-1"></a>?chartSeries</span></code></pre></div>
+<ul>
+<li>What is <strong>OHLC</strong> charts?
+<center>
+<div class="figure"><span id="fig:pressure"></span>
+<img src="figures/image1.png" alt="OHLC" width="40%" />
+<p class="caption">
+Figure 1.1: OHLC
+</p>
+</div>
+</center></li>
+</ul>
+</div>
+<div id="obtain-unemployment-data" class="section level3">
+<h3><span class="header-section-number">1.1.7</span> Obtain Unemployment Data</h3>
+<p>We can use other sources to obtain data. For example, let us obtain monthly
+unemployment rate from Federal Reserve Economic Data (FRED).</p>
+We may find the symbol for unemployment rate in the following page
+<center>
+<a href="https://fred.stlouisfed.org/series/UNRATE" class="uri">https://fred.stlouisfed.org/series/UNRATE</a>,
+</center>
+<p>which reveals that the symbol is UNRATE.</p>
+<div class="sourceCode" id="cb31"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb31-1"><a href="#cb31-1"></a><span class="kw">getSymbols</span>(<span class="st">&quot;UNRATE&quot;</span>,<span class="dt">src=</span><span class="st">&quot;FRED&quot;</span>)</span></code></pre></div>
+<pre><code>## [1] &quot;UNRATE&quot;</code></pre>
+</div>
+<div id="visualize-unemployment-data" class="section level3">
+<h3><span class="header-section-number">1.1.8</span> Visualize Unemployment Data</h3>
+<div class="sourceCode" id="cb33"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb33-1"><a href="#cb33-1"></a><span class="kw">dim</span>(UNRATE)</span></code></pre></div>
+<pre><code>## [1] 870   1</code></pre>
+<div class="sourceCode" id="cb35"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb35-1"><a href="#cb35-1"></a><span class="kw">head</span>(UNRATE)</span></code></pre></div>
+<pre><code>##            UNRATE
+## 1948-01-01    3.4
+## 1948-02-01    3.8
+## 1948-03-01    4.0
+## 1948-04-01    3.9
+## 1948-05-01    3.5
+## 1948-06-01    3.6</code></pre>
+<div class="sourceCode" id="cb37"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb37-1"><a href="#cb37-1"></a><span class="kw">tail</span>(UNRATE)</span></code></pre></div>
+<pre><code>##            UNRATE
+## 2020-01-01    3.6
+## 2020-02-01    3.5
+## 2020-03-01    4.4
+## 2020-04-01   14.7
+## 2020-05-01   13.3
+## 2020-06-01   11.1</code></pre>
+<hr />
+<div class="sourceCode" id="cb39"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb39-1"><a href="#cb39-1"></a><span class="kw">chartSeries</span>(UNRATE, <span class="dt">theme=</span><span class="st">&quot;white&quot;</span>)</span></code></pre></div>
+<p><img src="2020-CFRM420-Notes_files/figure-html/unnamed-chunk-16-1.png" width="672" style="display: block; margin: auto;" /></p>
+</div>
+</div>
+<div id="asset-return" class="section level2">
+<h2><span class="header-section-number">1.2</span> Asset Return</h2>
+<div id="single-period-return" class="section level3">
+<h3><span class="header-section-number">1.2.1</span> Single Period Return</h3>
+<ul>
+<li>Let <span class="math inline">\(P_0, P_1, \ldots\)</span> be the price of an equity. For now, let’s assume no
+“corporate actions” such as dividends, split, etc.</li>
+<li>Net return over <span class="math inline">\([t-1,t]\)</span>:</li>
+</ul>
+<p><span class="math display">\[
+R_t:= (P_t-P_{t-1})/P_{t-1}.
+\]</span></p>
+<ul>
+<li>Gross return over <span class="math inline">\([t-1,t]\)</span> is</li>
+</ul>
+<p><span class="math display">\[
+P_t/P_{t-1} = 1+R_t
+\]</span></p>
+<ul>
+<li>Log returns over <span class="math inline">\([t-1,t]\)</span>:</li>
+</ul>
+<p><span class="math display">\[
+r_t := \log({P_t}/{P_{t-1}})
+\]</span></p>
+</div>
+<div id="multi-period-returns" class="section level3">
+<h3><span class="header-section-number">1.2.2</span> Multi Period Returns</h3>
+<ul>
+<li><span class="math inline">\(R_t(k)\)</span>, the net return over <span class="math inline">\([t-k,t]\)</span>, is given by:</li>
+</ul>
+<p><span class="math display">\[ 
+\begin{aligned}
+R_t(k) 
+&amp; := \frac{P_t}{P_{t-k}} - 1 \\
+&amp; = (1+R_t)(1+R_{t-1})\cdots(1+R_{t-k+1}) -1,
+\end{aligned}
+\]</span></p>
+<ul>
+<li><span class="math inline">\(r_t(k)\)</span>, the log return over <span class="math inline">\([t-k,t]\)</span>, is given by:</li>
+</ul>
+<p><span class="math display">\[
+\begin{aligned}
+r_t(k) 
+&amp; := \log\frac{P_t}{P_{t-k}} \\
+&amp; = r_t + r_{t-1} + \cdots + r_{t-k+1}
+\end{aligned}
+\]</span></p>
+</div>
+<div id="simple-example" class="section level3">
+<h3><span class="header-section-number">1.2.3</span> Simple Example</h3>
+The following table gives two daily (adjusted) closing price of Apple stock in Dec. 2015
+<center>
+<table>
+<thead>
+<tr>
+<th>
+Date
+</th>
+<th>
+12/23
+</th>
+<th>
+12/24
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+Price($)
+</td>
+<td>
+104.56
+</td>
+<td>
+104.00
+</td>
+</tr>
+</tbody>
+</table>
+</center>
+<ul>
+<li>Gross (daily) return on 12/24 is<br />
+<span class="math display">\[104/104.56=0.994644\]</span></li>
+<li>Net return on 12/24 is<br />
+<span class="math display">\[0.994644-1=−0.005356\]</span></li>
+<li>Log return on 12/24 is<br />
+<span class="math display">\[\log(104.00)−\log(104.56)=−0.005370\]</span></li>
+</ul>
+</div>
+<div id="approximation-example" class="section level3">
+<h3><span class="header-section-number">1.2.4</span> Approximation Example</h3>
+<ul>
+<li><p>For small <span class="math inline">\(|x|\)</span> , we have<br />
+<span class="math display">\[
+x\approx \log(1+x),
+\]</span>
+whence log and net returns are good approximation of each other</p></li>
+<li><p>Suppose that we use log returns instead of net returns.</p>
+<ul>
+<li>How are our estimations? for losses and for gains?</li>
+</ul></li>
+</ul>
+<hr />
+<div class="sourceCode" id="cb40"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb40-1"><a href="#cb40-1"></a>x=<span class="kw">seq</span>(<span class="op">-</span><span class="dv">1</span>,<span class="dv">1</span>,<span class="dt">by=</span><span class="fl">0.01</span>)</span>
+<span id="cb40-2"><a href="#cb40-2"></a>y =<span class="st"> </span><span class="kw">log</span>(<span class="dv">1</span><span class="op">+</span>x)</span>
+<span id="cb40-3"><a href="#cb40-3"></a><span class="kw">plot</span>(x,y,<span class="dt">type=</span><span class="st">&#39;l&#39;</span>)</span>
+<span id="cb40-4"><a href="#cb40-4"></a><span class="kw">abline</span>(<span class="dt">a=</span><span class="dv">0</span>,<span class="dt">b=</span><span class="dv">1</span>,<span class="dt">col=</span><span class="st">&#39;red&#39;</span>)</span></code></pre></div>
+<p><img src="2020-CFRM420-Notes_files/figure-html/unnamed-chunk-17-1.png" width="672" style="display: block; margin: auto;" /></p>
+</div>
+</div>
+<div id="adjusted-price" class="section level2">
+<h2><span class="header-section-number">1.3</span> Adjusted Price</h2>
+<p>There are many market events that makes our return formula inappropriate for
+quoted prices, e.g. dividend payments, stock splits, etc.</p>
+<div id="net-return-with-dividend" class="section level3">
+<h3><span class="header-section-number">1.3.1</span> Net Return with Dividend</h3>
+<p>Let <span class="math inline">\(D_1\)</span>, <span class="math inline">\(D_2\)</span>, … be the dividends of a stock with quoted prices
+<span class="math inline">\(P_1, P_2,\ldots\)</span>, where <span class="math inline">\(D_t\)</span> is the dividend paid at <span class="math inline">\(t\)</span>.
+The appropriate definition of the net return <strong>should</strong> be
+<span class="math display">\[
+R_t = \frac{P_t + D_t - P_{t-1}}{P_{t-1}}.
+\]</span>
+Similarly, the multi-period net return <span class="math inline">\(R_t(k)\)</span> <strong>should</strong> be
+<span class="math display">\[
+\begin{aligned}
+&amp;\quad 1+ R_t(k) \\
+&amp; = (1+R_t)(1+R_{t-1}) \dots (1+R_{t-k+1})\\
+&amp;= \left(\frac{P_t+D_t}{P_{t-1}}\right)\left(\frac{P_{t-1}+D_{t-1}}{P_{t-2}}\right)\cdots\left(\frac{P_{t-k+1}+D_{t-k+1}}{P_{t-k}}\right) \\
+&amp;\ne \frac{P_t}{P_{t-k}}
+\end{aligned}
+\]</span></p>
+</div>
+<div id="the-idea-behind-adjusted-prices" class="section level3">
+<h3><span class="header-section-number">1.3.2</span> The idea behind “adjusted prices”</h3>
+<p>Find prices <span class="math inline">\(\widetilde P_{t_1}\)</span>, <span class="math inline">\(\widetilde P_{t_2}\)</span>, …, such that
+return are given by “simple” formulas applied to <span class="math inline">\(\widetilde P_t\)</span>. In other words, we <strong>want</strong>
+<span class="math display">\[
+\begin{aligned}
+&amp;\quad 1+R_t  = \frac{\widetilde{P}_t}{\widetilde{P}_{t-1}}\\
+&amp; \Longrightarrow\frac{P_t + D_t}{P_{t-1}} = \frac{\widetilde {P}_t}{\widetilde {P}_{t-1}}\\
+&amp; \Longrightarrow\widetilde P_t = \left(\frac{P_t+D_t}{P_{t-1}}\right) \widetilde P_{t-1}
+\end{aligned}
+\]</span></p>
+<ul>
+<li>There are many such adjustment for different types of events. Always use
+“adjust prices” to calculate returns.</li>
+</ul>
+</div>
+<div id="using-adjusted-aapl-prices" class="section level3">
+<h3><span class="header-section-number">1.3.3</span> Using Adjusted AAPL Prices</h3>
+<ul>
+<li>Next, we show two ways to calculate asset returns using R. Let us first obtain
+the prices of Apple Inc.</li>
+</ul>
+<div class="sourceCode" id="cb41"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb41-1"><a href="#cb41-1"></a><span class="kw">getSymbols</span>(<span class="st">&quot;AAPL&quot;</span>, <span class="dt">from=</span><span class="st">&quot;2017-10-03&quot;</span>, <span class="dt">to=</span><span class="st">&quot;2017-10-13&quot;</span>, <span class="dt">src=</span><span class="st">&quot;yahoo&quot;</span>)</span></code></pre></div>
+<pre><code>## [1] &quot;AAPL&quot;</code></pre>
+<div class="sourceCode" id="cb43"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb43-1"><a href="#cb43-1"></a><span class="kw">names</span>(AAPL)</span></code></pre></div>
+<pre><code>## [1] &quot;AAPL.Open&quot;     &quot;AAPL.High&quot;     &quot;AAPL.Low&quot;      &quot;AAPL.Close&quot;   
+## [5] &quot;AAPL.Volume&quot;   &quot;AAPL.Adjusted&quot;</code></pre>
+</div>
+<div id="adjusted-prices" class="section level3">
+<h3><span class="header-section-number">1.3.4</span> Adjusted Prices</h3>
+<p>As mentioned before, the adjusted price is the column AAPL.Adjusted. We can
+obtain the column by using the $ operator:</p>
+<div class="sourceCode" id="cb45"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb45-1"><a href="#cb45-1"></a>AAPL<span class="op">$</span>AAPL.Adjusted</span></code></pre></div>
+<pre><code>##            AAPL.Adjusted
+## 2017-10-03      148.6490
+## 2017-10-04      147.6867
+## 2017-10-05      149.5246
+## 2017-10-06      149.4380
+## 2017-10-09      149.9576
+## 2017-10-10      150.0153
+## 2017-10-11      150.6408
+## 2017-10-12      150.1116</code></pre>
+</div>
+<div id="log-and-net-return-of-aapl" class="section level3">
+<h3><span class="header-section-number">1.3.5</span> Log and Net Return of AAPL</h3>
+<p>One can use the lag() and diff() functions (take a look at
+the R documentation to learn what they do).</p>
+<div class="sourceCode" id="cb47"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb47-1"><a href="#cb47-1"></a>P &lt;-<span class="st"> </span>AAPL<span class="op">$</span>AAPL.Adjusted</span>
+<span id="cb47-2"><a href="#cb47-2"></a>R &lt;-<span class="st"> </span><span class="kw">diff</span>(P)<span class="op">/</span><span class="kw">lag</span>(P)</span>
+<span id="cb47-3"><a href="#cb47-3"></a><span class="kw">class</span>(R)</span></code></pre></div>
+<pre><code>## [1] &quot;xts&quot; &quot;zoo&quot;</code></pre>
+<div class="sourceCode" id="cb49"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb49-1"><a href="#cb49-1"></a>r &lt;-<span class="st"> </span><span class="kw">diff</span>(<span class="kw">log</span>(P))</span>
+<span id="cb49-2"><a href="#cb49-2"></a><span class="kw">class</span>(r)</span></code></pre></div>
+<pre><code>## [1] &quot;xts&quot; &quot;zoo&quot;</code></pre>
+<hr />
+<div class="sourceCode" id="cb51"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb51-1"><a href="#cb51-1"></a><span class="kw">head</span>(r)</span></code></pre></div>
+<pre><code>##            AAPL.Adjusted
+## 2017-10-03            NA
+## 2017-10-04 -0.0064943407
+## 2017-10-05  0.0123677222
+## 2017-10-06 -0.0005793969
+## 2017-10-09  0.0034711500
+## 2017-10-10  0.0003848614</code></pre>
+<div class="sourceCode" id="cb53"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb53-1"><a href="#cb53-1"></a><span class="kw">head</span>(R)</span></code></pre></div>
+<pre><code>##            AAPL.Adjusted
+## 2017-10-03            NA
+## 2017-10-04 -0.0064732981
+## 2017-10-05  0.0124445188
+## 2017-10-06 -0.0005792291
+## 2017-10-09  0.0034771815
+## 2017-10-10  0.0003849354</code></pre>
+<p>Let us calculate the net and log returns for a longer period and plot the result.</p>
+<div class="sourceCode" id="cb55"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb55-1"><a href="#cb55-1"></a><span class="kw">getSymbols</span>(<span class="st">&quot;AAPL&quot;</span>, <span class="dt">from=</span><span class="st">&quot;2007-01-03&quot;</span>, <span class="dt">to=</span><span class="st">&quot;2017-10-13&quot;</span>, <span class="dt">src=</span><span class="st">&quot;yahoo&quot;</span>)</span></code></pre></div>
+<pre><code>## [1] &quot;AAPL&quot;</code></pre>
+<div class="sourceCode" id="cb57"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb57-1"><a href="#cb57-1"></a>AAPL.rtn =<span class="st"> </span><span class="kw">diff</span>(AAPL<span class="op">$</span>AAPL.Adjusted)<span class="op">/</span><span class="kw">lag</span>(AAPL<span class="op">$</span>AAPL.Adjusted) <span class="co"># Compute net returns</span></span>
+<span id="cb57-2"><a href="#cb57-2"></a><span class="kw">colnames</span>(AAPL.rtn)[<span class="dv">1</span>] =<span class="st"> &quot;net&quot;</span></span>
+<span id="cb57-3"><a href="#cb57-3"></a>AAPL.rtn<span class="op">$</span>log =<span class="st"> </span><span class="kw">diff</span>(<span class="kw">log</span>(AAPL<span class="op">$</span>AAPL.Adjusted)) <span class="co"># Compute log returns</span></span>
+<span id="cb57-4"><a href="#cb57-4"></a><span class="kw">head</span>(AAPL.rtn)</span></code></pre></div>
+<pre><code>##                     net          log
+## 2007-01-03           NA           NA
+## 2007-01-04  0.022195488  0.021952753
+## 2007-01-05 -0.007121143 -0.007146620
+## 2007-01-08  0.004938096  0.004925943
+## 2007-01-09  0.083070321  0.079799898
+## 2007-01-10  0.047855424  0.046745622</code></pre>
+<div class="sourceCode" id="cb59"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb59-1"><a href="#cb59-1"></a><span class="kw">chartSeries</span>(AAPL.rtn<span class="op">$</span>net, <span class="dt">name =</span> <span class="st">&quot;Net-returns of Apple Inc.&quot;</span>, <span class="dt">theme=</span><span class="kw">chartTheme</span>(<span class="st">&quot;white&quot;</span>, <span class="dt">up.col=</span><span class="st">&#39;black&#39;</span>))</span></code></pre></div>
+<p><img src="2020-CFRM420-Notes_files/figure-html/unnamed-chunk-24-1.png" width="672" style="display: block; margin: auto;" /></p>
+<hr />
+<div class="sourceCode" id="cb60"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb60-1"><a href="#cb60-1"></a><span class="kw">chartSeries</span>(AAPL.rtn<span class="op">$</span>log, <span class="dt">name =</span> <span class="st">&quot;log-returns of Apple Inc.&quot;</span>, <span class="dt">theme=</span><span class="kw">chartTheme</span>(<span class="st">&quot;white&quot;</span>, <span class="dt">up.col=</span><span class="st">&#39;black&#39;</span>))</span></code></pre></div>
+<p><img src="2020-CFRM420-Notes_files/figure-html/unnamed-chunk-25-1.png" width="672" style="display: block; margin: auto;" /></p>
+
+</div>
+</div>
+</div>
+            </section>
+
+          </div>
+        </div>
+      </div>
+
+
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/lunr.js"></script>
+<script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-clipboard.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": {
+"github": false,
+"facebook": true,
+"twitter": true,
+"linkedin": false,
+"weibo": false,
+"instapaper": false,
+"vk": false,
+"all": ["facebook", "twitter", "linkedin", "weibo", "instapaper"]
+},
+"fontsettings": {
+"theme": "white",
+"family": "sans",
+"size": 2
+},
+"edit": {
+"link": "https://github.com/rstudio/bookdown-demo/edit/master/LectureTopic01.Rmd",
+"text": "Edit"
+},
+"history": {
+"link": null,
+"text": null
+},
+"view": {
+"link": null,
+"text": null
+},
+"download": ["2020-CFRM420-Notes.pdf", "2020-CFRM420-Notes.epub"],
+"toc": {
+"collapse": "subsection"
+}
+});
+});
+</script>
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    var src = "true";
+    if (src === "" || src === "true") src = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML";
+    if (location.protocol !== "file:")
+      if (/^https?:/.test(src))
+        src = src.replace(/^https?:/, '');
+    script.src = src;
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+</body>
+
+</html>

@@ -1,0 +1,155 @@
+--- 
+title: "CFRM 420 Lecture Notes"
+author: "Nam Lee"
+date: "`r Sys.Date()`"
+site: bookdown::bookdown_site
+output: bookdown::gitbook
+documentclass: book
+bibliography: [book.bib, packages.bib]
+biblio-style: apalike
+link-citations: yes
+github-repo: rstudio/bookdown-demo
+description: "This is a course lecture note accompanying CFRM 420 for Year 2020."
+---
+
+
+**Course** : CFRM 420 (Introduction to Computational Finance and Financial Econometrics)
+
+**Instructor**: Nam Lee (elhmn@uw.edu)
+
+**Teaching Assistant**: To be arranged
+
+**Class schedule**: Monday & Wednesday 5:00 PM – 6:20 PM (80 minutes) at Loew Hall 216
+
+**Final Exam**: Mon, Dec 14  6:30 PM ends prior to 8:20 PM (<110 minutes) at Loew Hall 216 (Tentative)
+
+**Office hours**: 
+
+- Instructor: 
+  - a weekly virtual meeting must be 
+    - through https://washington.zoom.us/j/9650024596
+    - between 5 PM and 6 PM on Thursday
+    
+- TA : 
+  - for virtual meeting, use:
+    - through https://washington.zoom.us/
+    - (Tuesday 1:00 PM - 3:00 PM) for both virtual and in-person meeting
+
+
+**Course description**: This course is an introduction to the main
+statistical methods used in financial data science. The emphasis is
+evenly divided between the analysis and implementation of these methods
+and their applications in the realm of finance. Topics to be covered
+are: financial data and asset returns, linear regression, non-linear
+regression, non-parametric regression, ARIMA (Autoregressive integrated
+moving average) models, and GARCH (Generalize autoregressive conditional
+heteroscedasticity) models. Depending on the progress of the course,
+some or all of the following topics will also be discussed:
+cointegration analysis, factor models (including CAPM), and PCA
+(principal component analysis). During the course, students will also
+develop a working knowledge of the statistical software R.
+
+**Prerequisites**: Students are assumed to have knowledge of
+multivariate calculus and linear algebra at the level of CFRM 405, and
+probability and statistics at the level of CFRM 410. Prior experience
+with R is not needed (though it is helpful). To check if you have the
+necessary background, please take the “self assessment test” that is
+posted on the Canvas course website (see below for explanation on how to
+access the website).
+
+**Textbook**: The required textbook is Statistics and Data Analysis for
+Financial Engineering with R Examples, by David Ruppert and David
+Matteson, second edition (Springer 2015). The electronic version of the
+book is available at no charge from the publisher (Check UW library Webpage)
+
+
+The textbook has a website with many useful materials, such as answers to selected problems.
+See: https://people.orie.cornell.edu/davidr/SDAFE2/index.html
+
+**Course Website**: The course Canvas website is accessible at
+https://canvas.uw.edu/ (UW credentials needed). If you are registered in
+the course, you should see a link to the course website. The instructor
+will post announcements, assignments, and other course materials on the
+course webpage.
+
+**Discussion forum**: There is a discussion forum on the website for you
+to ask questions and see/respond to questions that other student has
+asked. Please be courteous and considerate when posting comments, and
+keep the forum friendly and collaborative such that all students feel
+welcome to use it. The instructor will regularly monitor the forum.
+
+**Honor Code**: All students are expected to comply with the usual
+standards for academic conduct as outlined in the CFRM Student Honor
+Code. This Honor Code is available in the “Files” section of the Canvas
+website.
+
+**Religious Accommodations**: Washington state law requires that UW develop a policy for accommodation of student absences or significant hardship due to reasons of faith or conscience, or for organized religious activities. The UW’s policy, including more information about how to request an accommodation, is available at Religious Accommodations Policy (https://registrar.washington.edu/staffandfaculty/religious-accommodations-policy/). Accommodations must be requested within the first two weeks of this course using the Religious Accommodations Request form (https://registrar.washington.edu/students/religious-accommodations-request/).
+
+**Coursework**: The coursework consists of the following components:
+
+  Ingredient   Date                      % of Course Grade
+  ------------ ------------------------- -------------------
+  Homework     See the course schedule   40%
+  Midterm      Nov 04, 2020              30%
+  Final        Dec 13, 2020              30%
+  ------------ ------------------------- -------------------
+
+
+-   Homework: There will be 8 homework sets. Each homework has equal
+    contribution to the total grade, regardless of the total points
+    assigned to it. Homework sets are posted on Canvas, and they are
+    to be submitted online through Canvas as well. Late or
+    non-submission of homework sets is not acceptable under any
+    circumstance, and a zero grade will be assigned if this happens.
+
+-   Participation bonus: To encourage students to participate in the
+    end-of-class course evaluation questionnaire, your lowest homework
+    grade will be dropped if at least 80% of the students respond to
+    the questionnaire. In such case, only your highest 7 homework
+    grades will be counted towards the course grade.
+
+-   Midterm and Final Exams: The exams are closed-book. Make-up exams
+    will be given at the discretion of the instructor and only in case
+    of a justifiable reason, such as a medical or family emergency
+    that is communicated with the instructor in a timely manner.
+    
+-   Exam for online students: Local online students may take exams on the UW Seattle
+    campus if there is space available in the classroom. Check with the TA to
+    confirm your seat. Otherwise, online exams must be proctored. Midterms and
+    finals must be completed on the same day and (if possible) at the same time as
+    the in-class course. If the indicated schedule cannot be arranged, contact the
+    professor or TA to discuss an alternative time.  For reference, Seattle is in
+    the Pacific time zone and observes daylight saving time.  Please refer to 
+    http://cfrm.uw.edu/info/exam-proctors/
+    
+
+-   UW grades: A linear grade scale will be used to convert percentage
+    course grades into UW grades. That is, the posted course grade
+    will be the percentage course grade divided by 25, and then
+    rounded up to the nearest tenth.
+    
+**Tentative Course Schedule** 
+
+  Week   Date     Lecture   Topic                                          Chapter   Homework
+  ------ -------- --------- ---------------------------------------------- --------- ------------------------
+  1      Sep 26   1         Financial Data and Asset Returns               2         
+  2      Oct 1    2         Basic Regression                               9         HW 1 Posted
+  2      Oct 3    3         Basic Regression                               9         
+  3      Oct 8    4         Basic Regression                               9         HW 1 Due, HW 2 Posted
+  3      Oct 10   5         Regression Diagnostics                         10        
+  4      Oct 15   6         Non-linear Regression                          11        HW 2 Due, HW 3 Posted
+  4      Oct 17   7         Non-parametric Regression                      21        
+  5      Oct 22   8         ARIMA Models                                   12        HW 3 Due, HW 4 Posted
+  5      Oct 24   9         ARIMA Models                                   12        
+  6      Oct 29   10        ARIMA Models                                   12        HW 4 Due
+  6      Oct 31   -         Review for the Midterm Exam                              
+  7      Nov 5    -         Midterm Exam (during the regular class time)             
+  7      7        11        GARCH Models                                   14        HW 5 Posted
+  8      12       12        Cointegration Analysis                         15        
+  8      14       13        PCA and factor models                          18        HW 5 Due, HW 6 Posted
+  9      19       14        PCA and factor models                          18          
+  9      21       15        Special Topics                                 -         HW 6 Due, HW 7 Posted
+  10     26       16        Special Topics                                 -         
+  10     28       17        Thanksgiving Holiday                                     HW 7 Due*, HW 8 Posted
+  11     Dec 3*   18        Special Topics                                 -         
+  11     Dec 5    -         Review for Final Exam                                    HW 8 Due
